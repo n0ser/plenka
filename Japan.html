@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cathy's bloG</title>
+    <link rel="stylesheet" href="Japa.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="/examples/libs/ui-components/itc-slider/itc-slider.css" rel="stylesheet">
+  <script src="/examples/libs/ui-components/itc-slider/itc-slider.js" defer></script>
+</head>
+<body>
+  <header id="header" class="header lock-padding">
+    <div id="logo" onclick="slowScroll('#top')">
+      <span><a style="color: #000; text-decoration: none;" href="blog.html">Plenka</span>
+    </div>
+    
+    <div id="about">
+      <a style="color:#000;" href="photo.html" title="Фототехника" onclick="slowScroll('#photo')">Блог</a>  
+      <a style="color:#000;" href="blog.html" title="Блог" onclick="slowScroll('#main')">Философия плёнки</a>
+      <a style="color:#000;" href="plenka.html" title="Выбор плёнки" onclick="slowScroll('#plenka')">Выбор плёнки</a>
+     <a style="color:#000;" href="iam.html" title="Обо мне" onclick="slowScroll('#iam')">Обо мне</a>
+    </div>
+  </header>
+
+  <div id = "top">
+    <img style="width: 210px; height: 110px; margin-left: 5%; margin-top: 2%;" src="./img/j.jpg">
+    </div>
+
+    <div id="overview">
+        <h2>Japan Camera Hunter представляет слайд-пленку FuguFilm 400 — совершенно новую эмульсию</h2>
+        <br>
+        <div class="img">
+        <img style="margin-left:87%; margin-top: -10%;" src="./img/Fujji.jpeg">
+          </div>
+        <br>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        function slowScroll(id) {
+            $('html, body').animate({
+                scrollTop: $(id).offset().top
+            }, 500);
+        }
+
+        $(document).on("scroll", function () {
+            if($(window).scrollTop() === 0)
+            $("header").removeClass("fixed");
+            else
+            $("header").attr("class", "fixed");
+        });
+    </script>
+
+<div id="overview">
+    <h4>
+       <a style="color: red; text-decoration: none;" href="https://www.japancamerahunter.com"> Japan Camera Hunter (JCH) </a> анонсировала <a style="color: red; text-decoration: none;" href="https://www.japancamerahunter.com/2022/03/film-news-fugufilm-400-official-announcement/">FuguFilm 400,</a> совершенно новую позитивную <br>пленку с ISO 400, которая поступит в продажу в конце этого года. По словам Беллами Ханта,<br> основателя JCH, FuguFilm 400 — первая полностью новая слайдовая плёнка, выпущенная <br>«почти за два десятилетия»<br>
+       На создание FuguFilm 400 ушло три года. С 2019 года JCH работает с Горацио Таном из Street<br> Silhouettes над созданием новой позитивной пленки с ISO 400<br><br>
+       «Мы прошли через множество тестовых версий, пытаясь получить правильный баланс,<br> правильную насыщенность и правильный ISO», — говорит Хант, что было непросто, учитывая, что:<br> «Многие химические вещества, которые использовались в более ранних слайд-плёнках,<br> просто запрещены. Таким образом, были внесены различные изменения, чтобы соблюдать<br> различные местные и федеральные правила, чтобы лучше защитить окружающую среду»<br><br>
+       Хант говорит, что FuguFilm 400 «был задуман и создан полностью с нуля, и потребовалось<br> много времени, чтобы достичь уровня, которым мы довольны». Как и во многих проектах за<br> последние несколько лет, пандемия COVID-19 затормозила прогресс, но Тан и Хант в<br> конечном итоге справились и теперь находятся на этапе, когда уже делятся творением с миром<br><br>
+       Почему слайд? Хант говорит: «Горацио и я решили, что хотим сделать слайд-пленку, поскольку<br> считаем, что при оцифровке цветной позитивной пленки легче получить лучшие результаты,<br> чем при оцифровке цветной негативной пленки. <br><br>
+       Ниже приведен пример галереи изображений, снятых Мишелем Нгуеном на предварительных <br>рулонах FuguFilm 400:
+</h4>
+<br>
+
+<script>
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            setTimeout(showSlides, 4000);
+        }
+    </script>
+
+     <div class="slideshow-container">
+    <div class="mySlides fade">
+        <img src="./img/ab.jpg" style="width:100%; margin-left: 40%">
+    </div>
+    <div class="mySlides fade">
+       <img src="./img/bc.jpg" style="width:100%; margin-left: 40%">
+    </div>
+    <div class="mySlides fade">
+       <img src="./img/cd.jpg" style="width:100%; margin-left: 40%">
+    </div>
+
+    <div class="mySlides fade">
+       <img src="./img/de.jpg" style="width:100%; margin-left: 40%">
+    </div>
+
+    <div class="mySlides fade">
+       <img src="./img/ef.jpg" style="width:100%; margin-left: 40%">
+    </div>
+    <div class="mySlides fade">
+       <img src="./img/fe.jpg" style="width:100%; margin-left: 40%">
+    </div>
+    
+</div>
+
+<br>
+<div style="text-align:center">
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+</div>
+<br>
+<br>
+<script>
+    var slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) { slideIndex = 1 }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+        setTimeout(showSlides, 4000);
+    }
+</script>
+<br>
+<div id="overview">
+    <h4>
+        Примечательной деталью всего проекта является то, что и Тан, и Хант избегали краудфандинга<br> на этапах исследований и разработок, используя деньги из собственных карманов, чтобы<br> воплотить эту плёнку в жизнь. Хант говорит, что «это было дорогое направление» как в<br> финансовом, так и в психологическом отношении, с «множеством головных болей,<br> разочарований и несчастий» на этом пути. «Но мы, наконец, можем сказать, что довольны<br> результатами», — говорит Хант
+    </h4>
+</div>
+
+<div class="SSS">
+        <img src="./img/hant.jpeg" style="width:100%; height: 100%; margin-left: 40%">
+    </div>
+    
+<div id="overview">
+    <h4>
+        Хант не называет конкретной даты выпуска, говоря, что «FuguFilm будет<br> готов, когда будет готов», но уточняет, что он будет выпущен «в этом году», и говорит, что плёнка «будет<br> продаваться по конкурентоспособной и доступной цене» во всех крупных розничных<br> магазинах. После заключительных этапов бета-тестирования и окончательного анализа будет<br> выпущена спецификация, но в настоящее время она недоступна. Вы можете следить за <br>анонсами FuguFilm 400 в моём <a style="color: red; text-decoration: none;" href="https://web.telegram.org/k/#-1484274769">Телеграме</a> 
+    </h4>
+</div>
+    </div>
+</div>
+
+   
+
+
+
+
+
+
+
+ <footer class="footer-distributed">
+    <div class="footer-right">
+        <a href="https://vk.com/cathys_sweet_home" class="fa fa-vk"></a>
+        <a href="https://web.telegram.org/k/#-1484274769"><i class="fa fa-telegram"></i></a>
+        <a href="https://instagram.com/thecathysay?igshid=YmMyMTA2M2Y="><i class="fa fa-instagram"></i></a>
+    </div>
+
+    <div class="footer-left">
+    <p class="footer-links">
+        <a class="link-1" href="#"></a>
+        <a href="#" title="Выбор плёнки"></a>
+        <a href="#" title="Фототехника"></a>
+        <a href="#" title="Философия плёнки"></a>
+        <a href="#" title="Обо мне"></a>
+    </p> 
+    </div>
+   </footer>
+
+</body>
+</html>

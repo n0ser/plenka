@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cathy's bloG</title>
+    <link rel="stylesheet" href="kron.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="/examples/libs/ui-components/itc-slider/itc-slider.css" rel="stylesheet">
+  <script src="/examples/libs/ui-components/itc-slider/itc-slider.js" defer></script>
+</head>
+<body>
+  <header id="header" class="header lock-padding">
+    <div id="logo" onclick="slowScroll('#top')">
+      <span><a style="color: #000; text-decoration: none;" href="blog.html">Plenka</span>
+    </div>
+    
+    <div id="about">
+      <a style="color:#000;" href="photo.html" title="Фототехника" onclick="slowScroll('#photo')">Блог</a>  
+      <a style="color:#000;" href="blog.html" title="Блог" onclick="slowScroll('#main')">Философия плёнки</a>
+      <a style="color:#000;" href="plenka.html" title="Выбор плёнки" onclick="slowScroll('#plenka')">Выбор плёнки</a>
+      <a style="color:#000;" href="iam.html" title="Обо мне" onclick="slowScroll('#iam')">Обо мне</a>
+    </div>
+  </header>
+
+  <div id = "top">
+    <img style="width: 230px; height: 150px; margin-left: -4px; margin-top: 55px;" src="./img/af1c.jpg">
+    </div>
+
+    <div id="overview">
+        <h2>Впечатления от Olympus µ [mju:]-II</h2>
+        <br>
+        <br>
+        <iframe width="965" height="543" src="https://www.youtube.com/embed/Oat56ylc-o0" title="Тест камеры Olympus mju II" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <br>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        function slowScroll(id) {
+            $('html, body').animate({
+                scrollTop: $(id).offset().top
+            }, 500);
+        }
+
+        $(document).on("scroll", function () {
+            if($(window).scrollTop() === 0)
+            $("header").removeClass("fixed");
+            else
+            $("header").attr("class", "fixed");
+        });
+    </script>
+
+  <div id="overview">
+  <h1>
+    <b>Olympus µ [mju:]-II</b>
+  </h1>
+  <br>
+    <h4 style="margin-left: -105px">
+    С самого начала я снимала на цифровые фотоаппараты, по типу, Сanon, Sony и т.д. и была уверена, что ничего другого мне<br> не нужно, тк они надежные как швейцарские часы, никогда не подводили. Но в какой-то момент захотелось карманную<br> камеру, всё-таки у зеркалок только один недостаток — габариты и вес, порой просто лень брать с собой камеру «на всякий случай»,<br> хоть и приучила себя всегда быть при камере. А захотелось этого после поездки в Питер, когда не решилась взять с собой <br>фотоаппарат на одну из ночных гулянок. Но у моей подруги был с собой компакт, обычная старая пластиковая мыльница<br> и о чудо, это оказалось идеальным решением для подобных приключений. Так у меня начали появляться карманные камеры.
+    <br><br>
+
+    Сначала я откопалa у родителей мыльницу Panasonic, с которой ещё в детстве ездилa в деревню, потом друзья подарили ещё<br> парочку, но изучив вопрос более детально я узнала об этой крошке. <a style="color: red;text-decoration: none;" href="https://youtu.be/3STU0fENHO8">Olympus [mju:]-II.</a> Эта камера стала настоящим 35-мм<br> откровением. Невероятно компактный размер в совокупности с хорошим объективом, эргономичным корпусом и точечным<br> замером! Это просто отличная камера на каждый день.
+    <br><br>
+
+    У камеры оказался действительно очень хороший объектив, порой сравнивалa карточки с теми, что снялa на профессиональные<br> зеркалки и не могла понять, как эта крошка так может. Отличным решением является выбор фокусного расстояния — 35 мм<br> вместо 28, как у большинства компактов, хотя может это просто личное предпочтение. Вспышка, которая имеет 3 режима,<br> тоже не подводила, особенно интересно работать с ней во время осадков — порой выходят необычные непредсказуемые кадры.<br> Батарейки очень долго живут, но лучше всегда иметь запасную, т.к. не в каждом ларьке можно найти CR123A, а упустить<br> хороший кадр из-за севшего элемента питания совсем невесело. Камера очень удобна и оперативна, за секунду готова к<br> съёмке, автофокус шустрый и отлично отрабатывает, не ошибается.
+    <br><br>
+
+    Из минусов пожалуй только несколько не очень существенных. Из-за своей популярности ценник на эти камеры вырос на глазах.<br> В своё время можно было найти отличный экземпляр до 1000 рублей, но последние несколько лет цена колеблется в районе<br> 3500 руб. а порой появляются объявление и за 6000 руб. Но, если нет спешки, то можно найти и дешевле, главное искать.<br> Камера не очень хорошо переносит падения об асфальт, хотя это даже не минус, а мой личный каприз (вот бы ей титановый <br>корпус:), ведь никакой фотоаппарат лучше не ронять. Хотя многие экземпляры и после нескольких падений прекрасно <br>отрабатывали. Со временем у меня появилось своё маленькое кладбище мьюшек и даже один монстр, собранный из<br> тушек разного цвета!
+    </h4> 
+
+    <div id="overview">
+        <h1><b>  Технические характеристики:</b></h1>
+        <h3>
+            <ul>
+                <li>Объектив: Olympus 35/2,8, 4 элемента в 4 группах</li>
+                <li>Фокусное расстояние: 35 мм</li>
+                <li>Диафрагма: 2,8–11</li>
+                <li>Выдержки: 4–1/1000с</li>
+                <li>Диапазон фокусировки: 0,35 м — ∞</li>
+                <li>Вспышка: 3 режима работы</li>
+                <li>Питание: CR123A</li>
+                <li>Режим точечного замера (опционально)</li>
+                <li>Дистанционное управление (опционально)</li>
+                <li>Автоспуск</li>
+                <li>Защита от влаги</li>
+                <li>Впечатиывание даты (у версий камеры Quartzdate)</li>
+                <li>Размеры: 108 (Ш) 59 (В) 37 (Г) мм без выступающих частей</li>
+                <li>Масса: 135 г без батареи питания</li>
+            </ul>
+        </h3>
+    </div>
+
+        <div id="overview">
+        <h1>
+        <b>Примеры фотографий на <a style="color: red; text-decoration: none;" href="https://pola-store.ru/fotoplenka/919-kodak-pro-image-100-135-36.html"> фотоплёнку Kodak Pro Image 100</a></b>
+        </h1>
+        </div>
+
+    <p>
+    <img src="./img/kazak.jpg" alt="Фотография 1" width="120" height="320">
+    <img src="./img/canon.jpg" alt="Фотография 2" width="120" height="320">
+    <img src="./img/my.jpg" alt="Фотография 3" width="120" height="320">
+  </p>
+    </div>
+  
+
+    <footer class="footer-distributed">
+    <div class="footer-right">
+        <a href="https://vk.com/cathys_sweet_home" class="fa fa-vk"></a>
+        <a href="https://web.telegram.org/k/#-1484274769"><i class="fa fa-telegram"></i></a>
+        <a href="https://instagram.com/thecathysay?igshid=YmMyMTA2M2Y="><i class="fa fa-instagram"></i></a>
+    </div>
+
+    <div class="footer-left">
+    <p class="footer-links">
+        <a class="link-1" href="#"></a>
+        <a href="#" title="Выбор плёнки"></a>
+        <a href="#" title="Фототехника"></a>
+        <a href="#" title="Философия плёнки"></a>
+        <a href="#" title="Обо мне"></a>
+    </p> 
+    </div>
+   </footer>
+
+</body>
+</html>

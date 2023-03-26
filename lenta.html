@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cathy's bloG</title>
+    <link rel="stylesheet" href="kron.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="/examples/libs/ui-components/itc-slider/itc-slider.css" rel="stylesheet">
+  <script src="/examples/libs/ui-components/itc-slider/itc-slider.js" defer></script>
+</head>
+<body>
+  <header id="header" class="header lock-padding">
+    <div id="logo" onclick="slowScroll('#top')">
+      <span><a style="color: #000; text-decoration: none;" href="blog.html">Plenka</span>
+    </div>
+    
+    <div id="about">
+      <a style="color:#000;" href="photo.html" title="Фототехника" onclick="slowScroll('#photo')">Блог</a>  
+      <a style="color:#000;" href="blog.html" title="Блог" onclick="slowScroll('#main')">Философия плёнки</a>
+      <a style="color:#000;" href="plenka.html" title="Выбор плёнки" onclick="slowScroll('#plenka')">Выбор плёнки</a>
+      <a style="color:#000;" href="iam.html" title="Обо мне" onclick="slowScroll('#iam')">Обо мне</a>
+    </div>
+  </header>
+
+  <div id = "top">
+    <img style="width: 150px; height: 150px; margin-left: 5%; margin-top: 2%;" src="./img/metr.jpg">
+    </div>
+
+    <div id="overview">
+        <h2>Как хранить проявленную фотопленку</h2>
+        <br>
+        <div class="img">
+        <img style="margin-left:87%; margin-top: -10%;" src="./img/metr1.jpg">
+          </div>
+        </div>
+        <br>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        function slowScroll(id) {
+            $('html, body').animate({
+                scrollTop: $(id).offset().top
+            }, 500);
+        }
+
+        $(document).on("scroll", function () {
+            if($(window).scrollTop() === 0)
+            $("header").removeClass("fixed");
+            else
+            $("header").attr("class", "fixed");
+        });
+    </script>
+
+     <div id="overview">
+        <h4>
+          Пока плёнка в ролике, она занимает мало места. Но после проявки этот метр небрежно скрученного<br> целлулоида по настоящему напрягает
+        </h4>
+     </div>
+
+     <div class="img">
+          <img style="margin-left: 40%;" width="650" height="350" src="./img/metr1`.jpg">
+         </div>
+
+<div id="overview">
+  <h4 style="margin-top: 2%;">
+    Я знаю, что проявленную фотоплёнку хранят не все. Отсканировал и оставил в фотолаборатории. А зря!<br> В хранении своего фотоархива в плёнке состоит одна из краеугольных идей плёночной фотографии. Потому<br> что, как бы это парадоксально ни звучало, такой способ хранения надежнее.<br><br>
+
+    Когда вам отдают проявленную фотоплёнку в конверте, это выглядит довольно симпатично. Но такая форма<br> хранения своих плёнок совсем не годится если ваш архив переваливает за десяток. Конверты начинают выживать<br> остальные вещи с полки шкафа и выглядят неряшливо. Сейчас мой архив приближается к 50 плёнкам. А я знаю<br> людей, кто хранит пленки сотнями! Тут уже впору отводить им отдельную комнату.<br><br>
+
+    Расскажу как хранить плёнку удобно, безопасно и компактно. Не обязательно сожительствовать с конвертами<br> плёнки. Можно хранить фотоплёнку цивилизованным способом: в сливерах (принт-файлах).
+  </h4>
+
+          <div class="img">
+          <img style="margin-left: 90%; margin-top: 2%" width="550" height="550" src="./img/file.jpg">
+          </div>
+    </div>
+
+    <div id="overview">
+    <h4>
+       <a style="color:red; text-decoration:none;" href="https://photosale.ru/fotomaterialy/fayl_papka/fayl_maco_dlya_35_mm_negativov/"> Сливер</a> — это прозрачный полиэтиленовый принт-файл для хранения плёнки. Нарезав 35-мм плёнку на куски<br>по 6 кадров, вы уместите одну плёнку в один сливер
+    </h4> 
+
+          <div class="img">
+          <img style="margin-left:90%; margin-top: 2%" width="550" height="350" src="./img/silver.jpg">
+          </div>
+    </div>   
+
+    <div id="overview">
+        <h4>
+            Сливеры, подобно канцелярским файлам, подшиваются в канцелярские папки
+        </h4>
+
+          <div class="img">
+          <img style="margin-left:90%; margin-top: 2%" width="550" height="550" src="./img/kanz.jpg">
+          </div>
+    </div>  
+
+    <div id="overview">
+        <h4>
+        В одну папку можно уместить до 100 плёнок! И потом поставить эту папку на книжную полку.<br><br>
+
+        В сливере фотоплёнка не пылится, не выцветает, не мнётся и не царапается. Я знаю, что есть фотографы,<br> кто хранит фотоплёнку в пластиковой баночке от ролика туго скрученной. Так лучше с плёнкой не поступать.<br> Она царапается и её сложно потом заряжать в сканер. Сливеры стоят сущие копейки, чтобы на этом экономить.<br><br>
+
+        Храните фотоплёнку в сливерах. Это правильно!
+
+        </h4>
+    </div>
+
+    <footer class="footer-distributed">
+    <div class="footer-right">
+        <a href="https://vk.com/cathys_sweet_home" class="fa fa-vk"></a>
+        <a href="https://web.telegram.org/k/#-1484274769"><i class="fa fa-telegram"></i></a>
+        <a href="https://instagram.com/thecathysay?igshid=YmMyMTA2M2Y="><i class="fa fa-instagram"></i></a>
+    </div>
+
+    <div class="footer-left">
+    <p class="footer-links">
+        <a class="link-1" href="#"></a>
+        <a href="#" title="Выбор плёнки"></a>
+        <a href="#" title="Фототехника"></a>
+        <a href="#" title="Философия плёнки"></a>
+        <a href="#" title="Обо мне"></a>
+    </p> 
+    </div>
+   </footer>
+
+</body>
+</html>

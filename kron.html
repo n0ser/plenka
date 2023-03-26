@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cathy's bloG</title>
+    <link rel="stylesheet" href="kron.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="/examples/libs/ui-components/itc-slider/itc-slider.css" rel="stylesheet">
+  <script src="/examples/libs/ui-components/itc-slider/itc-slider.js" defer></script>
+</head>
+<body>
+  <header id="header" class="header lock-padding">
+    <div id="logo" onclick="slowScroll('#top')">
+      <span><a style="color: #000; text-decoration: none;" href="blog.html">Plenka</span>
+    </div>
+    
+    <div id="about">
+      <a style="color:#000;" href="photo.html" title="Фототехника" onclick="slowScroll('#photo')">Блог</a>  
+      <a style="color:#000;" href="blog.html" title="Блог" onclick="slowScroll('#main')">Философия плёнки</a>
+      <a style="color:#000;" href="plenka.html" title="Выбор плёнки" onclick="slowScroll('#plenka')">Выбор плёнки</a>
+      <a style="color:#000;" href="iam.html" title="Обо мне" onclick="slowScroll('#iam')">Обо мне</a>
+    </div>
+  </header>
+
+  <div id = "top">
+    <img style="width: 220px; height: 150px; margin-left: 5%; margin-top: 2%;" src="./img/zeni.jpg">
+    </div>
+
+    <div id="overview">
+        <h2>Основы экспозиции: диафрагма, выдержка, ISO на советских фотоаппаратах</h2>
+        <br>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        function slowScroll(id) {
+            $('html, body').animate({
+                scrollTop: $(id).offset().top
+            }, 500);
+        }
+
+        $(document).on("scroll", function () {
+            if($(window).scrollTop() === 0)
+            $("header").removeClass("fixed");
+            else
+            $("header").attr("class", "fixed");
+        });
+    </script>
+
+
+<div id="overview">
+
+    <h4>
+        Если вы только начинаете свой творческий путь в мире фотографии, то наверняка многие вещи вызывают вопросы.<br> Одни из основных параметров экспозиции — выдержка, диафрагма и чувствительность (ISO). В данной статье я<br> расскажу, что это такое и как с этим работать.
+
+    </h4> 
+    <br>
+
+    <div class="SSS">
+        <img src="./img/samsung.jpg" style="width:100%; height: 100%; margin-left: 10px" alt="Фотик">
+    </div>
+</div>
+</div>
+
+<div id="overview">
+    <br>
+
+  <h1>
+      <b>Диафрагма</b>
+  </h1>
+  <br>
+
+  <h4>
+    Диафрагма — она же «перегородка»(с греческого), она же «aperture» на английском. Это устройство, располагающееся<br> в объективе фотокамеры и отвечающее за размер отверстия, через которое будет проходить свет на пленку.<br> Чтобы было понятнее, проведем аналогию со шторами: если мы сильнее раздвинем шторы, то света из окна будет<br> проникать больше, если задвинем, то, соответственно, меньше.
+    </h4>
+   <br>
+
+
+       <div class="slideshow-container">
+
+             <div class="mySlides fade">
+             <div class="numbertext">1 / 3</div>
+             <img src="./img/f2.jpg" style="width:100%">
+             <div class="text">F2 (полностью открыта)</div>
+            </div>
+
+            <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="./img/f4.jpg" style="width:100%">
+            <div class="text">F4</div>
+           </div>
+
+            <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="./img/f16.jpg" style="width:100%">
+            <div class="text">F16 (полностью закрыта)</div>
+           </div>
+
+           <a class="prev" onclick="plusSlides(-1)">❮</a>
+           <a class="next" onclick="plusSlides(1)">❯</a>
+
+            </div>
+             <br>
+
+           <div style="text-align:center">
+           <span class="dot" onclick="currentSlide(1)"></span> 
+           <span class="dot" onclick="currentSlide(2)"></span> 
+           <span class="dot" onclick="currentSlide(3)"></span> 
+           </div>
+
+                  <script>
+                   var slideIndex = 1;
+                   showSlides(slideIndex);
+                   function plusSlides(n) {
+                   showSlides(slideIndex += n);
+                   }
+                  function currentSlide(n) {
+                  showSlides(slideIndex = n);
+                  }
+                 function showSlides(n) {
+                 var i;
+                 var slides = document.getElementsByClassName("mySlides");
+                 var dots = document.getElementsByClassName("dot");
+                 if (n > slides.length) {slideIndex = 1}    
+                 if (n < 1) {slideIndex = slides.length}
+                for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+                }
+                for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex-1].style.display = "block";  
+                dots[slideIndex-1].className += " active";
+                }
+                </script>
+                <br>
+
+                <h4>
+                    Диафрагма регулируется кольцами на самом объективе и обозначается буквой «f». Вот типичный пример<br> шага (или стопа) диафрагмы:
+                    <b>f/1.4 – f/2 – f/2.8 – f/4 – f/5.6 – f/8 – f/11 – f/16 – f/22</b><br><br>
+                    С каждым новым стопом количество света уменьшается ровно в два раза. То есть количество проникаемого<br> света при диафрагме f/1.4 будет в два раза больше, чем при f/2.<br><br>
+                    Помимо количества проникаемого света, диафрагма также отвечает за еще один важный параметр — глубина<br> резкости. Тут все довольно просто — чем меньше значение диафрагмы, тем меньше глубина резкости <br>(значит задний фон сильнее размывается, оставляя в фокусе меньше пространства). При низких значениях <br>диафрагмы обычно снимают портреты. А при больших — пейзажи, городскую съемку.
+                </h4>
+              </div>
+
+              <p style="text-align: center;">
+              <img src="./img/chel.jpg" width="320" height="320">
+              <img src="./img/sindzi.jpg" width="320" height="320">
+              <img src="./img/aina.jpg" width="320" height="320">
+              </p>
+              </div>
+
+   <div id="overview"> 
+   <h1>
+   <b>Тут важно запомнить:</b>
+   </h1>
+   <br>
+
+   <h3>
+   1.Чем <b>ВЫШЕ</b> значение диафрагмы, тем <b>МЕНЬШЕ</b> света проникает на пленку и глубина резкости <b>ВЫШЕ</b><br>
+
+   2. Чем <b>НИЖЕ</b> значение диафрагмы, тем <b>БОЛЬШЕ</b> света проникает на пленку и глубина резкости <b>МЕНЬШЕ</b><br>
+
+   3. Один стоп у диафрагмы уменьшает количество света в 2 раза, а само значение диафрагмы меняется в 1,4 раза.<br><br>
+
+   Ниже оставляю небольшую шпаргалку по значениям диафрагмы:
+   </h3>
+
+   <div class="SSS">
+        <img src="./img/shpora.png" style="width:100%; height: 100%; margin-left: 510px">
+    </div>
+    <br>
+
+    <div id="overview">
+     <h1>
+     <b>Выдержка</b>
+     </h1>
+    <br>
+
+    <h4>
+    Еще один важный элемент, отвечающий за экспозицию. Выдержка — это количество времени, в течение которого<br> свет будет проникать через объектив на пленку. Также можем провести аналогию со шторами — если мы просто<br> одернем шторы, то свет из окна буквально промелькнет в комнату, но если мы их распахнем и будем держать, то он<br> заполнит все помещение. Соответственно, чем длиннее выдержка, тем больше света проникает на пленку, т.е. кадр<br> получается светлее. Данная настройка измеряется в секундах или миллисекундах — чем больше число в знаменателе,<br> тем короче выдержка (то есть 1/2=0,5 сек, а 1/500=0,002 сек).
+    Настройка выдержки работает примерно также, как и <br>настройка диафрагмы — каждый стоп уменьшает количество получаемого света ровно в два раза. Вот как выглядит<br> типичный ряд стопов выдержки: <b>1/2 – 1/4 – 1/8 – 1/15 – 1/30 – 1/60 – 1/125 – 1/250 — 1/500</b><br><br>
+
+    То есть количество света при выдержке 1/4 будет в два раза меньше, чем при выдержке 1/2. Следует отметить, что<br> на некоторых камерах на кольце выдержек числитель опускается и остается только знаменатель. Например, как<br> на «Зенит-122к»:
+   </h4>
+
+     <div class="SSS">
+        <img src="./img/zenit.jpg" style="width:100%; height: 100%; margin-left: 10px">
+     </div>
+     <br>
+     </div>
+     <br>
+
+      <h4>
+      Короткая выдержка помогает нам «заморозить» наш кадр, остановить мгновение, тогда как длинная выдержка<br> наоборот, растягивает, размазывает наш кадр.
+      </h4>
+      </div>
+
+              <p style="text-align: center;">
+              <img src="./img/plav.jpg" width="420" height="320">
+              <img src="./img/fontan.jpg" width="420" height="320">
+              <img src="./img/reka.jpg" width="420" height="320">
+              </p>
+              </div>
+
+        <div id="overview">
+        <h4>
+            При этом следует помнить, что при использовании длинной выдержки лучше использовать штатив, ибо велика<br> вероятность смазывания кадра. При спуске затвора тоже следует быть осторожным, ибо зачастую на пленочных<br> камерах он механический и при спуске создает лишнюю вибрацию.<br><br>
+
+            Когда какая выдержка лучше подойдет? Если вы хотите запечатлеть какой-то движущийся объект (например,<br> падающую каплю воды), то используйте минимальную выдержку. А если, например, хотите размыть движущиеся<br> объекты (или фон вокруг движущегося объекта, например, автомобиля), то можно использовать длинную.<br> Длинная выдержка также подойдет при съемке в условиях низкой освещенности. Но еще один из важных<br> параметров поможет нам в экспонировании нашего кадра…<br><br>
+
+            Небольшая шпаргалка по значениям выдержки:
+        </h4>
+
+        <div class="SSS">
+        <img src="./img/shporgalka.png" style="width:100%; height: 100%; margin-left: 510px">
+        </div>
+
+        <div id="overview">
+             <h1>
+             <b>ISO Чувствительность пленки</b>
+             </h1>
+             <br>
+
+             <h4>
+                 Чувствительность пленки (она же ISO) — данный параметр отвечает за то, насколько чувствительная наша пленка к<br> свету. Чем меньше значение — тем менее чувствительна, чем выше — наоборот. Поскольку мы с вами говорим про<br> аналоговую фотографию, то должны понимать, что в отличие от цифровых современных решений, выбирать ISO мы<br> можем только один раз — при покупке пленки и установке ее в фотоаппарат. Цифровые камеры более гибкие в этом<br> плане и позволяют менять ISO как заблагорассудится и диапазон значений у них достаточно разнообразен. Обычно<br> значение ISO для пленок выглядит следующим образом:<b> 100 – 200 – 400 – 800 — и т.д.</b><br><br>
+
+                 Как вы могли заметить, каждый стоп ISO увеличивает чувствительность в два раза. Также, как и в случае с диафрагмой<br> и выдержкой. Чувствительность пленки необходимо выставить после ее загрузки в лоток специальным кольцом.<br><br>
+
+                 На некоторых более современных пленочных фотоаппаратах ISO пленки может определяться автоматически при<br> помощи DX-кодировки на пленке. Например, на том же Nikon F80.
+
+                 Ниже пример:
+             </h4>
+             <br>
+
+              <img id="myImg" src="./img/ZENIT122k.jpg" alt="Кольцо ISO на «Зенит-122к»" style="width:500px; height: 370px; max-width:500px">
+
+                <!-- The Modal -->
+                <div id="myModal" class="modal">
+                <span class="close">×</span>
+                <img class="modal-content" id="img01">
+                <div id="caption"></div>
+                </div>
+
+                <script>
+                // Get the modal
+                var modal = document.getElementById('myModal');
+                // Get the image and insert it inside the modal - use its "alt" text as a caption
+                var img = document.getElementById('myImg');
+                var modalImg = document.getElementById("img01");
+                var captionText = document.getElementById("caption");
+                img.onclick = function(){
+                modal.style.display = "block";
+                modalImg.src = this.src;
+                captionText.innerHTML = this.alt;
+                }
+                // Get the <span> element that closes the modal
+                var span = document.getElementsByClassName("close")[0];
+                // When the user clicks on <span> (x), close the modal
+                span.onclick = function() { 
+                modal.style.display = "none";
+                }
+                </script>
+                <br>
+
+                <div id="overview">
+                    <h4>
+                        Естественно, сначала будет сложно во всем этом разобраться, но спустя пару пленок вы начнете понимать<br> закономерности и научитесь определять необходимые параметры даже без помощи экспонометра. Для меня<br> в начале пути это казалось невозможным — слишком много надо держать в голове, настраивать, но на самом<br> деле все это довольно легко. Одна из прелестей пленочной фотографии в том, что вы сами строите свой кадр<br> и отвечаете за все настройки. Это открывает больше возможностей, вы лучше начинаете чувствовать кадр и<br> безусловно, это огромный простор для творчества: мультиэкспозиция, экспокоррекция и прочие параметры,<br> которые тоже очень интересны и важны при съемке. Безусловно, одна из будущих статей будет посвящена этим<br> параметрам, а также поговорим про то, что такое фокусное расстояние и как оно влияет на наш кадр.<br><a style="color: green;">Желаю удачи!</a>
+
+                    </h4>
+                </div>
+
+                </div>
+       </div>
+    <br>
+
+  </div>
+</div>
+
+
+ <footer class="footer-distributed">
+    <div class="footer-right">
+        <a href="https://vk.com/cathys_sweet_home" class="fa fa-vk"></a>
+        <a href="https://web.telegram.org/k/#-1484274769"><i class="fa fa-telegram"></i></a>
+        <a href="https://instagram.com/thecathysay?igshid=YmMyMTA2M2Y="><i class="fa fa-instagram"></i></a>
+    </div>
+
+    <div class="footer-left">
+    <p class="footer-links">
+        <a class="link-1" href="#"></a>
+        <a href="#" title="Выбор плёнки"></a>
+        <a href="#" title="Фототехника"></a>
+        <a href="#" title="Философия плёнки"></a>
+        <a href="#" title="Обо мне"></a>
+    </p> 
+    </div>
+   </footer></div>
+</body>
+</html>

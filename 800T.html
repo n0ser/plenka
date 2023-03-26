@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cathy's bloG</title>
+    <link rel="stylesheet" href="800T.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="/examples/libs/ui-components/itc-slider/itc-slider.css" rel="stylesheet">
+  <script src="/examples/libs/ui-components/itc-slider/itc-slider.js" defer></script>
+</head>
+<body>
+  <header id="header" class="header lock-padding">
+    <div id="logo" onclick="slowScroll('#top')">
+      <span><a style="color: #000; text-decoration: none;" href="blog.html">Plenka</span>
+    </div>
+    
+    <div id="about">
+      <a style="color:#000;" href="photo.html" title="Фототехника" onclick="slowScroll('#photo')">Блог</a>
+      <a style="color:#000;" href="blog.html" title="Блог" onclick="slowScroll('#main')">Философия плёнки</a>  
+      <a style="color:#000;" href="plenka.html" title="Выбор плёнки" onclick="slowScroll('#plenka')">Выбор плёнки</a>
+      <a style="color:#000;" href="iam.html" title="Обо мне" onclick="slowScroll('#iam')">Обо мне</a>
+    </div>
+  </header>
+
+  <div id = "top">
+    <img style="width: 200px; height: 200px; margin-left: 5%; margin-top: 1%;" src="./img/CineStill.jpg">
+    </div>
+
+    
+
+    <div id="overview">
+        <h2>Как фотографировать на плёнку CineStill 800T</h2>
+        <br>
+        <div class="img">
+        <img style="margin-left:87%;  margin-top: -10%;" src="./img/ppp.jpg">
+          </div>
+        <br>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        function slowScroll(id) {
+            $('html, body').animate({
+                scrollTop: $(id).offset().top
+            }, 500);
+        }
+
+        $(document).on("scroll", function () {
+            if($(window).scrollTop() === 0)
+            $("header").removeClass("fixed");
+            else
+            $("header").attr("class", "fixed");
+        });
+    </script>
+
+
+    <div id="overview">
+        <h4>Фотоплёнка <a style="color: red; text-decoration: none;" href="https://sreda.photo/goods/cinestill_800t_120">CineStill 800 Tungsten</a> чудесна, если правильно её экспонировать. <br>И речь не только про выдержку. У этой фотоплёнки есть один существенный нюанс, <br> о котором мало говорят.</h4> <br><br>
+
+        <h4><b>При съёмке на CineStill 800T используйте розовый фильтр, чтобы привести цветовую <br>температуру к температуре эмульсии.</b></h4></b><br>
+
+<h4>Фильтр — это не улучшайзер, это обязательная поправка баланса белого. Эта пленка настроена на ламповый свет, 2800К.<br> Если ее экспонировать в солнечный день, она будет синить и зеленить, потому что эмульсия пленки с индексом Т<br> гиперчувствительна к сине-зеленой части спектра, которого не хватает в свете вольфрамовых ламп накаливания.<br><br>
+
+Чтобы снимать пленкой с индексом Т в дневном свете, нужно:
+или использовать корректирующий розовый светофильтр,<br> который приводит дневной свет к температуре 2800 Кельвинов. Плотность фильтра, отдельная тема, можно погуглить по<br> слову "миред" или править баланс белого на скане, с некоторой потерей оттенков.<br><br>
+
+Подобным, же образом, пленка, с индексом Д (дневной свет, 5500 К), будет излишне желтить при съемке с лампами накаливания.<br> Тут или перебивать вспышкой, или использовать голубой фильтр. 
+
+        </h4>
+</div>
+
+<script>
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            setTimeout(showSlides, 4000);
+        }
+    </script>
+
+     <div class="slideshow-container">
+    <div class="mySlides fade">
+        <img src="./img/a.jpg" style="width:150%; margin-left: 40%">
+    </div>
+    <div class="mySlides fade">
+       <img src="./img/b.jpg" style="width:100%; margin-left: 40%">
+    </div>
+    <div class="mySlides fade">
+       <img src="./img/c.jpg" style="width:100%; margin-left: 40%">
+    </div>
+
+    <div class="mySlides fade">
+       <img src="./img/d.jpg" style="width:100%; margin-left: 40%">
+    </div>
+    
+</div>
+
+<br>
+<div style="text-align:center">
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+</div>
+<br>
+<br>
+<script>
+    var slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) { slideIndex = 1 }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+        setTimeout(showSlides, 4000);
+    }
+</script>
+
+
+
+
+
+
+</div>
+
+   <footer class="footer-distributed">
+    <div class="footer-right">
+        <a href="https://vk.com/cathys_sweet_home" class="fa fa-vk"></a>
+        <a href="https://web.telegram.org/k/#-1484274769"><i class="fa fa-telegram"></i></a>
+        <a href="https://instagram.com/thecathysay?igshid=YmMyMTA2M2Y="><i class="fa fa-instagram"></i></a>
+    </div>
+
+    <div class="footer-left">
+    <p class="footer-links">
+        <a class="link-1" href="#"></a>
+        <a href="#" title="Выбор плёнки"></a>
+        <a href="#" title="Фототехника"></a>
+        <a href="#" title="Философия плёнки"></a>
+        <a href="#" title="Обо мне"></a>
+    </p> 
+    </div>
+   </footer>
+
+
+
+
+</body>
+</html>

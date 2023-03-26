@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cathy's bloG</title>
+    <link rel="stylesheet" href="iam.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="/examples/libs/ui-components/itc-slider/itc-slider.css" rel="stylesheet">
+  <script src="/examples/libs/ui-components/itc-slider/itc-slider.js" defer></script>
+</head>
+<body>
+  <header id="header" class="header lock-padding">
+    <div id="logo" onclick="slowScroll('#top')">
+      <span><a style="color: #000; text-decoration: none;" href="blog.html">Plenka</span>
+    </div>
+    
+    <div id="about">
+      <a style="color:#000;" href="photo.html" title="Фототехника" onclick="slowScroll('#photo')">Блог</a>
+      <a style="color:#000;" href="blog.html" title="Блог" onclick="slowScroll('#main')">Философия плёнки</a>  
+      <a style="color:#000;" href="plenka.html" title="Выбор плёнки" onclick="slowScroll('#plenka')">Выбор плёнки</a>
+      <a style="color:#000;" href="iam.html" title="Обо мне" onclick="slowScroll('#iam')">Обо мне</a>
+    </div>
+  </header>
+
+  <div id = "top">
+     <img style="width: 250px; height: 350px; margin-left: -20px; margin-top: 5px;" src="./img/flag.jpg"> 
+    </div>
+
+    
+    
+
+<div id="overview">
+        <h2>Привет! Меня зовут Екатерина. <br>В повседневной жизни я работаю <br>в аптеке, а в свободное время увлекаюсь
+        <br> <img style="width:10%; " src="./img/photo.jpg"></h2>
+        <br>
+
+    <div class="img">
+    <img style="margin-left:50%; margin-top: -20%;" src="./img/HBCATHY.jpeg">
+    </div>
+
+    <div class="img">
+    <img style="margin-left:10%; margin-top: -5%;" src="./img/iam.jpg">
+    </div>
+</div>
+
+ <div id="overview">
+     <h2 style="margin-left: 35%; margin-top: -25%;">Еще в средней школе мне открылась возможность аналоговой фотографии. <br><br>
+
+    Это было очень завораживающее - сначала фотографировать все, что вижу, потом сдавать на проявку и ждать результата, ожидание всегда было волнительным.<br><br>
+
+    В 2019 году я нашла себе первый пленочный фотоаппарат, который раньше принадлежал родителям. Это был(я не могу вспомнить название). Я с головой окунулась в мир пленки, у меня появился первый опыт плёночной фотосъемки,  первые снимки, а также единомышленники. Мы встречались, обсуждали наши кадры и весело проводили время. Многие из нас были новичками, но это не мешало нам находить общий язык и делиться опытом. Все это было безумно интересно и увлекательно.<br><br>
+
+    Со временем я настолько увлеклась фотографией, что я решила не упускать возможность и продолжить развивать эту тему, продвигать в массы искусство плёнки в современном мире, а заодно и себя, как фотографа.</h2>
+ </div>  
+
+ 
+
+
+
+
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        function slowScroll(id) {
+            $('html, body').animate({
+                scrollTop: $(id).offset().top
+            }, 500);
+        }
+
+        $(document).on("scroll", function () {
+            if($(window).scrollTop() === 0)
+            $("header").removeClass("fixed");
+            else
+            $("header").attr("class", "fixed");
+        });
+    </script>
+
+   <footer class="footer-distributed">
+    <div class="footer-right">
+        <a href="https://vk.com/cathys_sweet_home" class="fa fa-vk"></a>
+        <a href="https://web.telegram.org/k/#-1484274769"><i class="fa fa-telegram"></i></a>
+        <a href="https://instagram.com/thecathysay?igshid=YmMyMTA2M2Y="><i class="fa fa-instagram"></i></a>
+    </div>
+
+    <div class="footer-left">
+    <p class="footer-links">
+        <a class="link-1" href="#"></a>
+        <a href="#" title="Выбор плёнки"></a>
+        <a href="#" title="Фототехника"></a>
+        <a href="#" title="Философия плёнки"></a>
+        <a href="#" title="Обо мне"></a>
+    </p> 
+    </div>
+   </footer>
+
+
+
+
+</body>
+</html>

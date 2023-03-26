@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cathy's bloG</title>
+    <link rel="stylesheet" href="kodak.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="/examples/libs/ui-components/itc-slider/itc-slider.css" rel="stylesheet">
+  <script src="/examples/libs/ui-components/itc-slider/itc-slider.js" defer></script>
+</head>
+<body>
+  <header id="header" class="header lock-padding">
+    <div id="logo" onclick="slowScroll('#top')">
+      <span><a style="color: #000; text-decoration: none;" href="blog.html">Plenka</span>
+    </div>
+    
+    <div id="about">
+      <a style="color:#000;" href="photo.html" title="Фототехника" onclick="slowScroll('#photo')">Блог</a>  
+      <a style="color:#000;" href="blog.html" title="Блог" onclick="slowScroll('#main')">Философия плёнки</a>
+      <a style="color:#000;" href="plenka.html" title="Выбор плёнки" onclick="slowScroll('#plenka')">Выбор плёнки</a>
+     <a style="color:#000;" href="iam.html" title="Обо мне" onclick="slowScroll('#iam')">Обо мне</a>
+    </div>
+  </header>
+
+  <div id = "top">
+    <img style="width: 210px; height: 170px; margin-left: 5%; margin-top: 2%;" src="./img/kodak400.jpg">
+    </div>
+
+    <div id="overview">
+        <h2>Как фотографировать на плёнку Kodak Ultramax 400 и получать идеальные фотографии</h2>
+        <br>
+        <div class="img">
+        <img style="margin-left:87%; margin-top: -10%;" src="./img/kodak.jpeg">
+          </div>
+        <br>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        function slowScroll(id) {
+            $('html, body').animate({
+                scrollTop: $(id).offset().top
+            }, 500);
+        }
+
+        $(document).on("scroll", function () {
+            if($(window).scrollTop() === 0)
+            $("header").removeClass("fixed");
+            else
+            $("header").attr("class", "fixed");
+        });
+    </script>
+
+<div id="overview">
+    <h4>
+       <a style="color: red; text-decoration: none;" href="https://pola-store.ru/fotoplenka/771-kodak-ultra-max-400-36.html"> Kodak Ultramax 400 </a> — универсальная любительская плёнка для 35-мм камер. У неё яркие цвета и выраженное зерно<br>
+       Подходит для пейзажей, портретов, лайфстайла, путешествий
+    </h4>
+    <br>
+
+    <div id="immg">
+        <img style="margin-left: 24%;" src="./img/kkk.jpg">
+    </div>
+</div>
+
+<div id="overview">
+    <h1 style="margin-left: -5%;">
+        <b>Обзор плёнки Kodak Ultramax 400</b>
+    </h1>
+    <br>
+
+    <h4>
+       Кодак Ультрамакс не такой популярный, как Kodak Gold 200.
+       <br>У него нет ореола всеобщей любви.<br> Не смотря на это, Kodak Ultramax 400 прикольная плёнка!
+    </h4> 
+
+    <div class="SSS">
+    <div class="SSS">
+        <img src="./img/ruins.jpeg" style="width:100%; margin-left: 510px; margin-top: 2%;">
+    </div>
+    <div class="SSS">
+       <img src="./img/dogi.jpg" style="width:100%; margin-left: 510px; margin-top: 2%;">
+    </div>
+</div>
+    </div>
+
+    <div id="overview">
+        <h1 style="margin-left: -5%;  margin-top: 2%;"> 
+            <b>Как ведёт себя Kodak Ultramax 400
+        </h1>
+        <br>
+
+        <h4>
+            Если переэспонировать Кодак Ультрамакс 400 как будто у него ISO 200, вы получите <br> традиционный для плёнок Kodak увод скинтона в желтизну. Все плёнки Кодака так себя ведут<br> и если у вас получились неестественно жёлтые фото, значит вы косячите с экспозицией в плюс.<br>
+            Лучше всего ваши фотографии на Kodak Ultramax будут выглядеть при экспозиции по номиналу,<br> т.е, с ISO 400. Если ваша камера автоматически считала DX-код, просто не мешайте ей делать своё дело.<br>
+            Эта плёнка абсолютно универсальна, подходит для помещений и съёмки круглый год.<br><br>
+            Экспонируйте Kodak UltraMax как 400-ку и вы получите естественный тон кожи, яркие цвета и<br> правильный контраст.<br>
+            Замеряйте освещённость сцены по теням, если у вас контрастная сцена. Если объект не на<br> открытом солнце, смело замеряйтесь по светлым участкам, чтобы получить естественный скинтон. 
+        </h4>
+        <br>
+
+        <script>
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { slideIndex = 1 }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            setTimeout(showSlides, 4000);
+        }
+    </script>
+
+     <div class="slideshow-container">
+    <div class="mySlides fade">
+        <img src="./img/sakura.jpg" style="width:100%; margin-left: 40%">
+    </div>
+    <div class="mySlides fade">
+       <img src="./img/moon.jpg" style="width:100%; margin-left: 40%">
+    </div>
+    <div class="mySlides fade">
+       <img src="./img/vid.jpg" style="width:100%; margin-left: 40%">
+    </div>
+
+    <div class="mySlides fade">
+       <img src="./img/sss.jpg" style="width:100%; margin-left: 40%">
+    </div>
+    
+</div>
+
+<br>
+<div style="text-align:center">
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+</div>
+<br>
+<br>
+<script>
+    var slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("dot");
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) { slideIndex = 1 }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex - 1].style.display = "block";
+        dots[slideIndex - 1].className += " active";
+        setTimeout(showSlides, 4000);
+    }
+</script>
+    </div>
+</div>
+
+   
+
+
+
+
+
+
+
+ <footer class="footer-distributed">
+    <div class="footer-right">
+        <a href="https://vk.com/cathys_sweet_home" class="fa fa-vk"></a>
+        <a href="https://web.telegram.org/k/#-1484274769"><i class="fa fa-telegram"></i></a>
+        <a href="https://instagram.com/thecathysay?igshid=YmMyMTA2M2Y="><i class="fa fa-instagram"></i></a>
+    </div>
+
+    <div class="footer-left">
+    <p class="footer-links">
+        <a class="link-1" href="#"></a>
+        <a href="#" title="Выбор плёнки"></a>
+        <a href="#" title="Фототехника"></a>
+        <a href="#" title="Философия плёнки"></a>
+        <a href="#" title="Обо мне"></a>
+    </p> 
+    </div>
+   </footer>
+
+
+
+
+</body>
+</html>
